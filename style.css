@@ -4,12 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nirmala UI';
+    font-family: 'Nirmala UI Regular';
 }
 
 
 @font-face {
-  font-family: 'Nirmala UI';
+  font-family: 'Nirmala UI Regular';
   src: url('https://raw.githubusercontent.com/tsuon1/tsuonvieri-mittcv/main/Nirmala UI Regular.ttf?raw=true') format('truetype');
 }
 
