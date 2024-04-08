@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 * 
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Nirmala UI;  
+    font-family: 'Nirmala UI', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Nirmala UI';
+  src: url('https://raw.githubusercontent.com/tsuon1/tsuonvieri-mittcv/main/Nirmala.ttf?raw=true') format('truetype');
 }
 
 
