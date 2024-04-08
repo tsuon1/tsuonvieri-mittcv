@@ -744,10 +744,11 @@ margin: 20px 0 20px;
 .interest ul li .fa
 {
     color: #F68A48; 
-    font-size: 18px;
-    width: 20px;
-    margin-right: 10px;
+    font-size: 30px;
+    width: 40px;
+    margin: 25px 10px 0 50px;
 }
+
 
 /* INTEREST1 */
 
@@ -901,6 +902,14 @@ margin: 20px 0 20px;
 
     .about .box .profile-item .title2 { 
         margin-bottom: 12px;
+    }
+
+    .interest ul li .fa
+    {
+    color: #F68A48; 
+    font-size: 24px;
+    width: 30px;
+    margin: 5px 5px -55px 25px;
     }
 
     .interest1 .skills_container {
