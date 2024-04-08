@@ -14,10 +14,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center; 
-    min-height: 100vh; 
-    max-width: 100vw;
-    overflow-x: hidden;
-    overflow-wrap: anywhere
+    min-height: 100vh;
 }
 
 .videobakgrund {
