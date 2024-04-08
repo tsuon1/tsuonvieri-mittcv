@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive CV using Html & CSS</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+<script src="animate.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" type="text/css" href="style.css">
+<script src="animateDots.js" defer></script>
+<script src="popup.js"></script>
+<script src="fade.js" defer></script>
+<script src="videoLoad.js" defer></script>
+<script src="loader.js" defer></script>
+<script src="arrow-button.js" defer></script>
+<script src="modal.js" defer></script>
+</head>
+<body>
+
+    <div class="videobakgrund">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop id="minVideo">
+            <source src="C0072_4_1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="loadingScreen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; display: flex; justify-content: center; align-items: center; z-index: 100;">
+        <div class="loader"></div>
+    </div>
+    
+    
+    <div class="container">
+        <div class="left_Side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="img/t1.jpg">
+                </div>
+                <h2>Tony Suonvieri<br><span>Online Video Producent</span></h2>
+                <div class="dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="dot blue"></span>
+                    <span class="dot orange"></span>
+                </div> 
+            </div>
+
+            <div class="contactInfo">
+                <h3 class="title">Personliga uppgifter</h3>
+                <ul>
+                    <li>
+                        <span class="texttitle">Adress</span>
+                    </li>
+                    <li>
+                        <span class="text">Älvgatan 3, Upplands Väsby</span>
+                    </li>
+                    <li>
+                        <span class="texttitle">Telefon</span>
+                    </li>
+                    <li>
+                        <span class="text">+46727221991</span>
+                    </li>
+                    <li>
+                        <span class="texttitle">Email</span>
+                    </li>
+                    <li>
+                        <a href="mailto:tsuonvieri1@gmail.com" class="text">tsuonvieri1@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="texttitle">LinkedIn</span>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/tsuonvieri" class="text" target="_blank">www.linkedin.com/in/tsuonvieri</a>
+                    </li>
+                </ul>
+            </div>
+<div class="skills2">
+            <div class="skills1">
+                <h3 class="title3">Mjukvarukunskaper</h3>
+                <h3 class="title4">Creative Cloud</h3>
+                <div class="box1">
+                    <h4>Adobe After Effects</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box1">
+                    <h4>Adobe Premiere Pro</h4>
+                        <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>Adobe Photoshop</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>Adobe Illustrator</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>Adobe Indesign</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>Adobe XD</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>     
+            </div>
+
+            <div class="skills1">
+                <h3 class="title4">Webdesign</h3>
+                <div class="box1">
+                    <h4>Figma</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills1">
+                <h3 class="title4">Ljud</h3>
+                <div class="box1">
+                    <h4>Audition</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>Logic Pro</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills1">
+                <h3 class="title4">Avid</h3>
+                <div class="box1">
+                    <h4>Composer</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills1">
+                <h3 class="title4">Språk</h3>
+                <div class="box1">
+                    <h4>Svenska</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>Engelska</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>Finska</h4>
+                    <div class="percent1">
+                        <div class="dots">
+                            <!-- Create five spans for the dots -->
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                            <span class="dot transparent"></span> <!-- 55% opacity -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills1">
+                <h3 class="title4">Körkort</h3>
+                <div class="box1">
+                    <h4>B</h4>
+                    
+                </div>
+            </div>
+
+            <div class="skills1">
+                <h3 class="title4">Certifikat</h3>
+                <div class="box1">
+                    <h4>SAE</h4>
+                
+                </div>
+            </div>
+
+            <div class="skills1">
+                <h3 class="title4">Referenser</h3>
+                <div class="box1">
+                    <h4>Lämnas ut på begäran</h4>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right_Side">
+ 
+        <div class="interest1">
+            <h2 class="title2">Färdigheter</h2>
+            <div class="skills_container">
+                <ul class="soft_skills">
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/1415507d-a823-4acf-8f69-e43b53559f02/NHcguvT39v.json"></div>
+                        <span class="text-label" data-content="KOMMUNIKATION">KOMMU-NIKATION</span>
+                    </li>
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/d41a0f6a-e62b-4adc-8ad3-9b448ecdee54/8Tsq4DxD5A.json"></div>
+                        <span class="text-label" data-content="IDÉSKAPANDE">IDÉ-SKAPANDE</span>
+                    </li>
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/ad6fdefb-d597-4308-bf94-e74c648e6c7b/bIhT0ZaE5M.json"></div>
+                        <span class="text-label" data-content="PROBLEMLÖSNING">PROBLEM-LÖSNING</span>
+                    </li>
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/8eb322a1-05b2-40ab-8b54-ff04b4bf7fdc/cNxKajDzkG.json"></div>
+                        <span class="text-label" data-content="TIDSHANTERING">TIDS-HANTERING</span>
+                    </li>
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/667f6eba-0507-4b69-8020-7bf95d1a7467/fPEJBocHpC.json"></div>
+                        <span class="text-label" data-content="TEAMWORK">TEAM-WORK</span>
+                    </li>
+                </ul>
+                
+                <ul class="hard_skills">
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/468cd2e6-a293-4e2d-86a4-95d2c34bf2b0/U6Muo9JI3V.json"></div>
+                        <span>FOTO</span>
+                    </li>
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/09dd5e32-56e4-4363-a721-2b15e3c5543a/LktgyoUcVN.json"></div>
+                        <span>VIDEO</span>
+                    </li>
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/58074721-e211-49c4-a404-5a610b8011b0/7qtqK3TbVE.json"></div>
+                        <span>REDIGERING</span>
+                    </li>
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/95417527-dae9-48a5-8314-96079786e6df/U4hvoEXATH.json"></div>
+                        <span>HTML/CSS</span>
+                    </li>
+                    <li>
+                        <div class="lottie" data-path="https://lottie.host/5a6d59bc-516c-4247-9955-742122ba6855/iMZe05SigJ.json"></div>
+                        <span>LIVE</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+          
+
+        <div class="about">
+            <div class="box">
+                <div class="profile-item">
+                    <h2 class="title2">Profil</h2>
+                    <p>Erfaren, ambitiös och lättlärd person som strävar efter att uppnå bästa möjliga slutresultat, både självständigt och i grupp. Flexibel och anpassningsbar inför nya omständigheter, med en stark tro på att ha god och tydlig kommunikation för att främja en trivsam och produktiv arbetsmiljö.</p>
+                </div>
+                <div class="profile-item">
+                    <h2 class="title2">Mål</h2>
+                    <p>Vill arbeta i en omgivning som utvecklar mig både personligt och yrkesmässigt genom varierande och lärorika arbets­erfarenheter.
+                        Vill tillsammans med kollegor och på egen­hand producera högkvalitativ och underhållande innehåll som engagerar, utbildar och berör människor.
+                        </p>
+                </div>
+            </div>
+            
+    </div>
+    <div class="about">
+        <h2 class="title2">ERFARENHET</h2>
+        <div class="box2">
+        <div class="experience-entry">
+            <div class="year-company-play">
+                <div class="year_company">
+                    <h5 class="date">MAJ 2023 -<br> NUVARANDE</h5>
+                </div>
+                <div class="play-button" onclick="openPopup('Portfolio Frilans 2024.mp4')">
+                    <img src="img/Play button grey.png" alt="Spela">
+                </div>
+            </div>
+            <div class="title-description">
+                <h4>VIDEOREDIGERARE</h4>
+                <h5 class="company1">FRILANS - STOCKHOLM, SVERIGE</h5>
+                <p>Som frilans videoproducent och översättare har jag bidragit till en mängd projekt som omfattar videoredigering, textning, översättning och färgkorrigering.</p>
+                <button class="expand-btn" onclick="toggleExpand(this)">
+                    Se mina projekt, ansvarsområden och meriter här
+                    <img src="img/down arrow.png" alt="Pil" class="arrow-icon">
+                </button>
+                <div class="expandable-content">
+                    <ul>
+                        <li class="category">
+                            <h4>Huvudansvar</h4>
+                            <p>Förse klienter med högkvalitativa och skräddarsydda redigeringar anpassade för deras specifika behov.</p>
+                        </li>
+                        <li class="category">
+                            <h4>Projekt</h4>
+                            <ul>
+                                <li>Brizo</li>
+                                <li>Greenpeace</li>
+                                <li>Skriv Jouren</li>
+                            </ul>
+                        </li>
+                        <li class="category">
+                            <h4>Ansvarsområden</h4>
+                            <ul>
+                                <li>Redigering</li>
+                                <li>SFX</li>
+                                <li>VFX</li>
+                                <li>Animation</li>
+                                <li>Grafik</li>
+                                <li>Textning</li>
+                                <li>Översättning</li>
+                            </ul>
+                        </li>
+                        <li class="category meriter">
+                            <h4>Meriter</h4>
+                            <ul>
+                                <li>Explainers för startup</li>
+                                <li>Brizo reklamfilm</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="box2">
+        <div class="experience-entry">
+            <div class="year-company-play">
+                <div class="year_company">
+                    <h5 class="date">AUG 2021 -<br> MAJ 2023</h5>
+                </div>
+                <div class="play-button" onclick="openModal()">
+                    <img src="img/Play button grey.png" alt="Spela">
+                  </div>                  
+            </div>
+            <div class="title-description">
+                <h4>ONLINE VIDEO PRODUCENT</h4>
+                <h5 class="company1">TIEGO AB - STOCKHOLM, SVERIGE</h5>
+                <p>Ansvarig för videoproduktion och innehållsstrategi på Tiego, med fokus på sociala medier och webbutveckling.</p>
+                <button class="expand-btn" onclick="toggleExpand(this)">
+                    Se mina projekt, ansvarsområden och meriter här
+                    <img src="img/down arrow.png" alt="Pil" class="arrow-icon">
+                </button>
+                <div class="expandable-content">
+                    <ul>
+                        <li class="category1">
+                          <h4>Huvudansvar</h4>
+                          <p>Ansvarade för videoproduktion och innehållsstrategi på Tiego, med fokus på internt innehåll, sociala medier och webbutveckling.</p>
+                        </li>
+                        <li class="category special-dashes">
+                          <h4>Projekt</h4>
+                          <ul class="projekt_Lista">
+                            <li>
+                              <p><strong>Skapa innehållsstrategi både externt och internt</strong> <br> Att bygga ut och förbättra hjälpdokumentationen genom att skapa filmer på både engelska och svenska, riktade mot användarna.</p>
+                            </li>
+                            <li>
+                              <p><strong>Omstrukturera och mordenisera webbplats </strong>  <br> Genomförde en omfattande uppdatering av företagets hemsida, inkluderande en ny design, uppdaterade fotografier, rörligt innehåll, skriftligt innehåll, samt optimering av kod och sökmotoroptimering (SEO).</p>
+                            </li>
+                            <li>
+                                <p><strong>Projektplanering för livesändning</strong> <br> Genomförde noggrann projektplanering som innefattade ljussättning, bildmix, grafik, kameravinklar och utveckling av en programidé. Projektet syftar till att månadsvis presentera nya uppgraderingar i företagets system genom livesändningar.</p>
+                            </li>
+                            <li>
+                                <p><strong>Fotocollage för bildanvändning</strong> <br>Skapade en visuell portfölj inriktad på förbättring av webbnärvaro och nyhetspubliceringar. Projektet omfattade urval och arrangemang av bilder för att stärka företagets varumärke och öka engagemanget online.</p>
+                            </li>
+                          </ul>
+                        </li>
+                    </ul>
+                            
+                            
+                        </li>
+                        <li class="category">
+                            <h4>Ansvarsområden</h4>
+                            <ul>
+                                <li>Projektledning</li>
+                                <li>Videoproduktion</li>
+                                <li>Webbplatsunderhåll</li>
+                                <li>Fotografering</li>
+                                <li>Design</li>
+                                <li>Copywriting</li>
+                                <li>Animering</li>
+                                <li>Budgetering</li>
+                            </ul>
+                        </li>
+                        <li class="category meriter">
+                            <h4>Meriter</h4>
+                            <ul>
+                              <li>
+                                Förbättrade teamets kreativitet och produktivitet: Införde regelbundna kreativa workshops och brainstorming-sessioner för videoproduktionsteamet, vilket ledde till innovativa idéer och effektivare arbetsflöden.
+                            </li>
+                            <li>
+                                Genom att effektivt utveckla och implementera nytt programkoncept för live-sändningar vid varje programuppdatering, lyckades vi avsevärt öka publikens engagemang. Denna metod resulterade i en 30% ökning av liveinteraktioner och en imponerande ökning av deltagarantalet med 150% jämfört med tidigare evenemang. Dessutom möjliggjorde denna strategi för oss att samla in ytterligare data baserat på live frågeställningar från våra kunder, vilket förbättrade vår förståelse och insikter om  kundbehov.
+                            </li>
+                            <li>
+                                Strategiskt webbunderhåll med kodoptimering: Genomförde en större översyn av vår webbplats, där dyra prenumerationstjänster och tredjepartsplugins ersattes med egenutvecklad kod. Detta tillvägagångssätt minskade inte bara våra driftskostnader utan förbättrade även webbplatsens prestanda och användarvänlighet.
+                            </li>
+                            <li>
+                                Noggrann budgetering och val av utrustning: Tog fram en skräddarsydd budget som anpassades till företagets ambitioner. Detta ledde i sin tur till kostnadseffektiva produktioner som inte kompromissade den visuella standarden.
+                            </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="box2">
+        <div class="experience-entry">
+            <div class="year-company-play">
+                <div class="year_company">
+                    <h5 class="date">AUG 2019 -<br> APRIL 2020</h5>
+                </div>
+                <div class="play-button" onclick="openPopup('ITV REEL 3.mp4')">
+                    <img src="img/Play button grey.png" alt="Spela">
+                </div>
+            </div>
+            <div class="title-description">
+                <h4>KLIPPASSISTENT</h4>
+                <h5 class="company1">ITV STUDIOS - STOCKHOLM, SVERIGE</h5>
+                <p>Ansvarade för att ta emot och importera material, loggning och uppdatering av grafiska element som texter, logotyper, eftertexter och grovklippning.</p>
+                <button class="expand-btn" onclick="toggleExpand(this)">
+                    Se mina projekt, ansvarsområden och meriter här
+                    <img src="img/down arrow.png" alt="Pil" class="arrow-icon">
+                </button>
+                <div class="expandable-content">
+                    <ul>
+                        <li class="category">
+                            <h4>Huvudansvar</h4>
+                            <p>Klippassistent medlare/mellanhand mellan kamerateam, producent och första klippare.</p>
+                        </li>
+                        <li class="category">
+                            <h4>Projekt</h4>
+                            <ul>
+                                <li>På Gränsen Med Peter Jidhe Säsong 1</li>
+                                <li>På Gränsen Med Peter Jidhe Säsong 2</li>
+                                <li>Diabetesgalan med Peter Jihde</li>
+                                <li>Love Island Sverige Säsong 1</li>
+                                <li>Love Island Sverige Säsong 2</li>
+                                <li>Helt Perfekt Säsong 1</li>
+                            </ul>
+                        </li>
+                        <li class="category">
+                            <h4>Ansvarsområden</h4>
+                            <ul>
+                                <li>Grovklippa sekvenser</li>
+                                <li>Textning</li>
+                                <li>Översättning</li>
+                                <li>Grafik</li>
+                                <li>Loggning</li>
+                            </ul>
+                        </li>
+                        <li class="category meriter">
+                            <h4>Meriter</h4>
+                            <ul>
+                                <ul>
+                                    <li>Reducerade systemkrascher och tekniska störningar med 50% genom att ta initiativ till regelbundna underhåll och uppdateringar av redigeringsmjukvaran och hårdvaran.</li>
+                                    <li>Utveckla nya mer effektiva arbetsmetoder med färgkodning och snabbkommandon samt promptar för att skära ner logg-timmar med 65%.</li>
+                                    <li>Skapade en anpassad ljudbibliotek som standardiserade ljudarbetet för olika projekt, vilket sparat tid och resurser för företaget.</li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="box2">
+        <div class="experience-entry">
+            <div class="year-company-play">
+                <div class="year_company">
+                    <h5 class="date">MAJ 2023 -<br> MARS 2024</h5>
+                </div>
+                <div class="play-button" onclick="openPopup('reel (1080p).mp4')">
+                    <img src="img/Play button grey.png" alt="Spela">
+                </div>
+            </div>
+            <div class="title-description">
+                <h4>FILM OCH VIDEOREDIGERARE</h4>
+                <h5 class="company1">UR - STOCKHOLM, SVERIGE</h5>
+                <p>
+                    Ansvarade för mottagning och import av material, loggning, samt uppdatering av grafiska element som texter och logotyper. Mitt huvudfokus låg på att ljudsätta och musiksätta, samt att utforma dramaturgiska sekvenser i ett samarbete med animatör och producenten.</p>
+                    <button class="expand-btn" onclick="toggleExpand(this)">
+                        Se mina projekt, ansvarsområden och meriter här
+                        <img src="img/down arrow.png" alt="Pil" class="arrow-icon">
+                    </button>
+                    <div class="expandable-content">
+                        <ul>
+                            <li class="category">
+                                <h4>Huvudansvar</h4>
+                                <p>Komponera ihop högkvalitativt, underhållande och pedagogiskt innehåll tilllsammans med producent och animatör.</p>
+                            </li>
+                            <li class="category">
+                                <h4>Projekt</h4>
+                                <ul>
+                                    <li>Vår Digitala Planet</li>
+                                    <li>Vår Digitala Planet i Fokus</li>
+                                    <li>Skriv Jouren</li>
+                                </ul>
+                            </li>
+                            <li class="category">
+                                <h4>Ansvarsområden</h4>
+                                <ul>
+                                    <li>Redigering</li>
+                                    <li>Animering</li>
+                                    <li>Textning</li>
+                                    <li>Översättning</li>
+                                    <li>Grafik</li>
+                                    <li>Loggning</li>
+                                </ul>
+                            </li>
+                            <li class="category meriter">
+                                <h4>Meriter</h4>
+                                <ul>
+                                    <li>Reducerade systemkrascher och tekniska störningar med 40% genom att ta initiativ till regelbundna underhåll och uppdateringar av redigeringsmjukvaran och hårdvaran.</li>
+                                    <li>Utveckla nya agila arbetsmetoder bla färgkodning och snabbkommandon samt promptar för att skära ner logg-timmar med 65%.</li>
+                                    <li>Skapade en anpassad ljudbibliotek som standardiserade ljudarbetet för olika projekt, vilket sparat tid och resurser för företaget.</li>
+                                    <li>Integrerade skräddarsydda animationer för att lyfta fram viktiga informativa punkter i våra videor, vilket bidrog till en djupare pedagogisk inverkan och bättre mottagande hos målgruppen.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="about">
+        <h2 class="title2">UTBILDNING</h2>
+        <div class="box2">
+        <div class="experience-entry">
+            <div class="year-company-play">
+                <div class="year_company">
+                    <h5 class="date">AUG 2018 -<br> APRIL 2020</h5>
+                </div>
+                <div class="play-button" onclick="openPopup('Online video producer på Medieinstitutet.mp4')">
+                    <img src="img/Play button grey.png" alt="Spela">
+                </div>
+            </div>
+            <div class="title-description">
+                <h4>ONLINE VIDEO PRODUCER</h4>
+                <h5 class="company1">MEDIEINSTITUTET - STOCKHOLM, SVERIGE</h5>
+                <p>En intensiv och mångsidig tvåårig utbildning, som syftar till att utrusta studenter med en djupgående kompetens inom skapandet och distributionen av videoinnehåll på digitala plattformar.</p>
+                <button class="expand-btn" onclick="toggleExpand(this)">
+                    Se mina projekt, ansvarsområden och meriter här
+                    <img src="img/down arrow.png" alt="Pil" class="arrow-icon">
+                </button>
+                <div class="expandable-content">
+                    <ul>
+                        <li><h4>Grundläggande och Avancerad Videoproduktion</h4> Du lär dig allt från kamerateknik, ljussättning, och ljudinspelning till avancerad redigering och postproduktion.</li>
+                        <li><h4>Marknadskommunikation och Marknadsföring</h4> Utbildningen täcker strategier för hur du effektivt marknadsför ditt videoinnehåll på digitala plattformar.</li>
+                        <li><h4>Digital Distribution</h4> Du får kunskap om distribution genom olika kanaler på internet, inklusive sociala medier, och hur du mäter effekten av ditt innehåll.</li>
+                        <li><h4>Konceptutveckling och Storytelling</h4> Fokus ligger på att utveckla kreativa koncept och berättelser som engagerar din målgrupp.</li>
+                        <li><h4>Användning av AI i Videoproduktion</h4> Kurser inkluderar även hur du kan använda AI-verktyg för att effektivisera och förbättra videoproduktionen.</li>
+                        <li><h4>Livestreaming</h4> Du utbildas i tekniker för att genomföra live-sändningar av hög kvalitet.</li>
+                        <li><h4>Praktisk Erfarenhet genom LIA (Lärande i Arbete)</h4> En stor del av utbildningen består av praktik där du tillämpar dina färdigheter i verkliga projekt på företag.</li>
+                        <li><h4>Entreprenörskap och Projektledning</h4> Kursen förbereder dig också för karriären som entreprenör eller projektledare inom videoproduktion.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="interest">
+                <h2 class="title2">INTRESSEN</h2>
+                <ul>
+                    <li><i class="fa fa-leaf" aria-hidden="true"></i>Naturen</li>
+                    <li><i class="fa fa-music" aria-hidden="true"></i>Musik</li>
+                    <li><i class="fa fa-book" aria-hidden="true"></i>Läsa</li>
+                    <li><i class="fa fa-cutlery" aria-hidden="true"></i>Matlagning</li>
+                </ul>
+
+                
+    </div>
+
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Close Button -->
+    <span class="close">&times;</span>
+  
+    <!-- Slider Content -->
+    <div class="modal-content">
+      <div class="mySlides">
+        <img src="img2/INTRO_1-8.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <img src="img2/2.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img2/3.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img2/4.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img2/5.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img2/6.png" style="width:100%">
+      </div>
+
+      <!-- <div class="mySlides">
+        <img src="img2/OUTRO.png" style="width:100%">
+      </div> -->
+
+      <!-- <div class="mySlides">
+        <video controls style="width:100%">
+          <source src="img/C0090.MP4" type="video/mp4">
+        </video>
+      </div> -->
+  
+      <!-- Next/previous controls -->
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+  </div> 
+
+</body>
+</html>
+      
