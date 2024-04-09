@@ -815,6 +815,10 @@ margin: 20px 0 20px;
         margin: 10px;
         grid-template-columns: repeat(1,1fr);
     }
+ 
+    .videobakgrund {
+    display: none;
+    }
 
     .text-label::before {
         content: '';
