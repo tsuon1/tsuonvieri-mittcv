@@ -821,7 +821,7 @@ margin: 0px;
 grid-template-columns: repeat(1,1fr);
 }
 
-.dots {
+.percent1 .dots {
     display: flex;
     justify-content: center; /* Center the dots horizontally */
     margin-top: 13px; /* Add space above the dots */
@@ -932,7 +932,7 @@ grid-template-columns: repeat(1,1fr);
     display: none;
 }
 
-.dots {
+.percent1 .dots {
     display: flex;
     justify-content: center; /* Center the dots horizontally */
     margin-top: 13px; /* Add space above the dots */
