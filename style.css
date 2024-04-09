@@ -906,7 +906,9 @@ margin: 20px 0 20px;
     
     
     .container {
-        margin: 0px;
+         padding: 0; /* Ta bort padding om det behövs */
+        margin: 0 auto; /* Centrerar containern */
+        /* Andra nödvändiga stiljusteringar för mobila enheter */
         grid-template-columns: repeat(1,1fr);
          overflow-x: hidden;
         }
