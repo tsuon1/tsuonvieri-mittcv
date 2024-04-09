@@ -7,7 +7,6 @@
     font-family: 'Nirmala UI';
 }
 
-
 @font-face {
   font-family: 'Nirmala UI';
   src: url('https://raw.githubusercontent.com/tsuon1/tsuonvieri-mittcv/main/NirmalaUI Regular.ttf?raw=true') format('truetype');
@@ -17,7 +16,7 @@
 
 @font-face {
   font-family: 'Nirmala UI';
-  src: url('https://raw.githubusercontent.com/tsuon1/tsuonvieri-mittcv/main/Nirmala UI Bold.ttf?raw=true') format('truetype');
+   src: url('https://raw.githubusercontent.com/tsuon1/tsuonvieri-mittcv/main/Nirmala UI Bold.ttf?raw=true') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -25,8 +24,8 @@
 @font-face {
   font-family: 'Nirmala UI';
   src: url('https://raw.githubusercontent.com/tsuon1/tsuonvieri-mittcv/main/Nirmala UI Semilight.ttf?raw=true') format('truetype');
-  font-weight: normal;
-  font-style: semilight;
+  font-weight: 300; /* 300 brukar användas för att ange "light" eller "semilight" vikter */
+  font-style: normal;
 }
 
 
