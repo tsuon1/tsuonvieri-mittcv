@@ -926,7 +926,7 @@ margin-bottom: 10px;
 {
 margin: 0px;
 grid-template-columns: repeat(1,1fr);
-padding: 0;
+padding: 0px;
 }
 
 .videobakgrund {
