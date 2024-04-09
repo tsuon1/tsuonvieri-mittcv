@@ -37,7 +37,6 @@ body
     align-items: center; 
     min-height: 100vh; 
     max-width: 100vw;
-    overflow-x: hidden;
 }
 
 .videobakgrund {
@@ -905,13 +904,25 @@ margin: 20px 0 20px;
 
     
     
+
+
+    body 
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+    max-width: 100vw;
+    }
+    
     .container {
-         padding: 0; /* Ta bort padding om det behövs */
-        margin: 0 auto; /* Centrerar containern */
-        /* Andra nödvändiga stiljusteringar för mobila enheter */
-        grid-template-columns: repeat(1,1fr);
-         overflow-x: hidden;
-        }
+    position: relative;
+    display: none;
+    width: 100%;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    }
 
 
     .dots {
