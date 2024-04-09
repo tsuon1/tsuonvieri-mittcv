@@ -922,14 +922,11 @@ margin-bottom: 10px;
 @media (max-width: 630px)
 {
 
-body { 
-overflow-x: hidden;
-}
-    
 .container
 {
 margin: 0px;
 grid-template-columns: repeat(1,1fr);
+overflow-x: hidden;
 }
 
 .videobakgrund {
