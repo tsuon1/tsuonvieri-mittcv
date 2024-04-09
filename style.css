@@ -905,15 +905,12 @@ margin: 20px 0 20px;
 
     body { 
         overflow-x: hidden; 
-         display: flex;
-         justify-content: center;
-         align-items: center; 
     }
      
     .container {
         margin: 0px;
         grid-template-columns: repeat(1,1fr);
-        overflow-x: hidden
+        place-items: center;
 
     }
 
