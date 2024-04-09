@@ -812,9 +812,17 @@ margin: 20px 0 20px;
 
 @media only screen and (max-width: 1070px) and (-webkit-min-device-pixel-ratio: 1), only screen and (max-width: 1070px) {
     .container {
-        margin: 10px;
+        margin: 0px;
         grid-template-columns: repeat(1,1fr);
     }
+
+    .dots {
+    display: flex;
+    justify-content: center; /* Center the dots horizontally */
+    margin-top: 13px; /* Add space above the dots */
+    margin-right: 10px;
+    }
+
  
     .videobakgrund {
     display: none;
@@ -894,8 +902,15 @@ margin: 20px 0 20px;
 
 @media only screen and (max-width: 630px) and (-webkit-min-device-pixel-ratio: 1), only screen and (max-width: 630px) {
     .container {
-        margin: 10px;
+        margin: 0px;
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .dots {
+    display: flex;
+    justify-content: center; /* Center the dots horizontally */
+    margin-top: 13px; /* Add space above the dots */
+    margin-right: 20px;
     }
 
     .interest1 ul {
