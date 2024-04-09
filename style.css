@@ -903,12 +903,13 @@ margin: 20px 0 20px;
 @media only screen and (max-width: 630px) and (-webkit-min-device-pixel-ratio: 1), only screen and (max-width: 630px) {
 
 
+    
+    
     .container {
         margin: 0px;
         grid-template-columns: repeat(1,1fr);
-        
-
-    }
+         overflow-x: hidden;
+        }
 
 
     .dots {
