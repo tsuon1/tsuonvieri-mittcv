@@ -924,17 +924,15 @@ margin-bottom: 10px;
 @media (max-width: 630px)
 {
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow-x: hidden;
-        margin: 0 auto; /* Ta bort övre och nedre marginal om inte behövs */
-        padding: 0 15px; /* Se över och justera detta värde */
-        min-height: auto; /* Eller vad som nu passar din design */
-        /* Andra anpassningar ... */
-    }
+.container {
+    display: grid;
+    place-items: center; /* Centrerar innehållet både vertikalt och horisontellt */
+    overflow-x: hidden;
+    margin: 0 auto; /* Centrerar containern horisontellt */
+    padding: 0 15px; /* Lägger till padding på sidorna */
+    min-height: 100vh; /* Exempel: Gör containern så hög som viewporten, justera enligt behov */
+    /* Andra anpassningar ... */
+}
 
     a[href^="tel"], .text {
         color: inherit; /* Behåller den nuvarande ärvt textfärgen */
