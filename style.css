@@ -42,11 +42,6 @@ body
     overflow-x: hidden;
 }
 
-  a[href^="tel"], .text {
-        color: inherit; /* Behåller den nuvarande ärvt textfärgen */
-        text-decoration: none; /* Tar bort understrykningen */
-    }
-
 .videobakgrund {
     position: fixed; 
     top: 0; 
@@ -825,6 +820,10 @@ margin: 20px 0 20px;
 margin: 0px;
 grid-template-columns: repeat(1,1fr);
 }
+a[href^="tel"], .text {
+        color: inherit; /* Behåller den nuvarande ärvt textfärgen */
+        text-decoration: none; /* Tar bort understrykningen */
+    }
 
 .percent1 .dots {
     display: flex;
