@@ -42,6 +42,11 @@ body
     overflow-x: hidden;
 }
 
+  a[href^="tel"], .text {
+        color: inherit; /* Behåller den nuvarande ärvt textfärgen */
+        text-decoration: none; /* Tar bort understrykningen */
+    }
+
 .videobakgrund {
     position: fixed; 
     top: 0; 
