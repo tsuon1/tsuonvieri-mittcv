@@ -26,6 +26,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nirmala UI', sans-serif; 
+    -webkit-text-size-adjust: none; 
 }
 
 body 
@@ -233,7 +234,12 @@ margin-top: 1px; /* Negative margin to pull the span closer to the h2 */
     font-weight: 600;
     letter-spacing: px;
     margin-bottom: 20px;
-    font-size: 1.1em;
+    font-size: 17.6px;
+}
+
+a[href^="tel"], .text {
+    color: inherit; /* Behåller den nuvarande ärvt textfärgen */
+    text-decoration: none; /* Tar bort understrykningen */
 }
 
 
@@ -269,6 +275,7 @@ margin-top: 1px; /* Negative margin to pull the span closer to the h2 */
 .contactInfo ul li span {
     color: #fff;
     font-weight: 300;
+    font-size: 13px;
 }
 
 .contactInfo ul li span.texttitle {
@@ -419,10 +426,6 @@ p {
 { 
     margin-right: 25px;
 }
-
-.title-description p {
-    font-size: 13px !important;
-  }
 
 
 .about .box .profile-item .title2 { 
@@ -588,7 +591,7 @@ strong
 .expandable-content {
     display: none;
     padding: 10px;
-    font-size: 14px;
+    font-size: 1px;
 }
 
 .expandable-content ul li::marker {
@@ -640,19 +643,10 @@ strong
     text-indent: -20px; /* Används för att linjera bullet point eller siffermarkör med ovanstående innehåll */
 }
 
-
-/* ...tidigare CSS... */
-
-  
-
   .category.meriter ul li {
     text-indent: -16px; /* Indrar den första raden negativt */
     padding-left: 17px; /* Flyttar resten av texten tillbaka till ursprunglig position */
   }
-
-  
-  
-
 
 .skills1
  { 
@@ -663,7 +657,6 @@ strong
  .skills1 .box1:last-child {
     margin-bottom: -1px; /* Adjust this value to your preference */
 }
-
 
  .skills2 
 
@@ -676,7 +669,6 @@ strong
      margin-bottom: 20px;
      color: white;
 }  
-
 
 .skills1 .box1 {
     display: flex; /* Using flex instead of grid for better alignment control */
@@ -1005,11 +997,6 @@ margin: 20px 0 20px;
         overflow-x: hidden; /* Gömmer horisontellt scroll */
     }
 
-    a[href^="tel"], .text {
-        color: inherit; /* Behåller den nuvarande ärvt textfärgen */
-        text-decoration: none; /* Tar bort understrykningen */
-    }
-
     .videobakgrund {
     display: none;
     }
@@ -1045,7 +1032,6 @@ margin: 20px 0 20px;
     position: relative;
     }
 
-  
     .play-button {
     position: absolute;
     left: -50px; /* Eller hur mycket du vill flytta den åt vänster */
@@ -1053,7 +1039,6 @@ margin: 20px 0 20px;
     transform: translateY(-50%);
     }
 
-  
     .play-button img {
     z-index: 2;
     }
@@ -1064,12 +1049,7 @@ margin: 20px 0 20px;
     max-width: calc(100% - 35px); /* Beräknar max bredd genom att subtrahera bredden av play-knappen och dess marginal */
     margin-left: 100px; /* Lägger till utrymme mellan play-knappen och texten */
     }
-  
-    .title-description p {
-    font-size: 13px;
-    }
 
-    
     .about .box2 .experience-entry {
     padding: 0; /* Återställer padding om nödvändigt */
     margin-bottom: 20px; /* Lägger till utrymme ovanför varje erfarenhetspost */
@@ -1077,10 +1057,6 @@ margin: 20px 0 20px;
     margin-right: -20px;
     }
 
-    ul li {
-    font-size: 13px;
-    }
-    
     .arrow-icon { 
     margin-left: 3px;
     width: 16px;
@@ -1104,10 +1080,6 @@ margin: 20px 0 20px;
     grid-template-columns: repeat(1,1fr);
     }
 
-    .about .box .profile-item p { 
-    font-size: 13px;
-    }
-
     .about .box .profile-item .title2 { 
     margin-bottom: 12px;
     }
@@ -1116,7 +1088,6 @@ margin: 20px 0 20px;
     margin: 0px 0 1px 0 !important;;
     }
   
-
    .title-description {
     order: 3;
     margin-left: 0;
@@ -1149,11 +1120,51 @@ margin: 20px 0 20px;
     margin-bottom: 10px; /* Lägger till utrymme mellan ikonen och texten */
     }
 
+    .modal-content {
+        width: 100vw; /* Ställer in bredden på viewportens bredd */
+        max-width: none; /* Tar bort max-bredd */
+        margin: 0; /* Tar bort marginaler */
+    }
+
+    .mySlides img {
+        width: 100%; /* Ställer in bildernas bredd till 100% av deras förälder */
+        height: auto; /* Behåller bildförhållandet */
+    }
+
+    video::-webkit-media-controls-play-button {
+        display: none;
+    }
+
+    .popup-video {
+        padding: 0; /* Ta bort padding för att tillåta att videon når till kanterna */
+        box-sizing: border-box; /* Behåll detta för att undvika oförutsägbar beteende med bredder */
+        width: 100%; /* Tillägg så att .popup-video tar upp hela bredden */
+        height: 100%; /* Tillägg så att .popup-video tar upp hela höjden */
+    }
+
+    .popup-inner {
+        width: 100%; /* Låter .popup-inner fylla 100% av .popup-video */
+        max-width: 100%; /* Används inte längre men kan behållas om du vill ha en begränsning */
+        height: auto; /* Justerar höjden för att behålla videoaspekten */
+        margin: auto; /* Centrerar i viewporten om det finns vertikal utrymme */
+        box-shadow: none; /* Optional: Ta bort skuggan om den inte ser bra ut på små skärmar */
+    }
+
+    .popup-close {
+        top: 5px; /* Justera positionen närmare toppen av skärmen */
+        right: 5px; /* Justera positionen närmare kanten av skärmen */
+        font-size: 20px; /* Justera storleken om den är för stor på små skärmar */
+    }
+
+    .popup-inner video {
+        width: 100%; /* Säkerställ att videon fyller hela bredden av .popup-inner */
+        height: auto; /* Låt höjden vara auto för att behålla videoaspekten */
+    }
+
 }
 
 
-@media (max-width: 1000px) { /* Adjust the max-width value based on your breakpoint needs */
-     
+@media (max-width: 1060px) { /* Adjust the max-width value based on your breakpoint needs */
      
     .about .box { 
       flex-direction: column; /* Stack children vertically */
@@ -1167,5 +1178,5 @@ margin: 20px 0 20px;
       padding: 0 15px; /* Keep the horizontal padding */
       grid-template-columns: none; /* Remove grid-template-columns as it's not needed here */
     }
-  
+   
   }
