@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Responsive CV using Html & CSS</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
-<script src="animate.js"></script>
+<script src="animate-on-scroll.js" defer></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" type="text/css" href="style.css">
 <script src="animateDots.js" defer></script>
 <script src="popup.js"></script>
@@ -345,7 +345,6 @@
             </div>
         </div>
           
-
         <div class="about">
             <div class="box">
                 <div class="profile-item">
@@ -517,6 +516,10 @@
                 <h5 class="date2">AUG 2019 - APRIL 2020</h5>
                 <h5 class="company1">ITV STUDIOS - STOCKHOLM, SVERIGE</h5>
                 <p>Ansvarade för att ta emot och importera material, loggning och uppdatering av grafiska element som texter, logotyper, eftertexter och grovklippning.</p>
+                <button class="expand-btn" onclick="toggleExpand(this)">
+                    Se mina projekt, ansvarsområden och meriter här
+                    <img src="img/down arrow.png" alt="Pil" class="arrow-icon">
+                </button>
                 <div class="expandable-content">
                     <ul>
                         <li class="category">
@@ -719,7 +722,7 @@
       <a class="next">&#10095;</a>
     </div>
   </div> 
-
+  
 </body>
 </html>
       
