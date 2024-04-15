@@ -1136,32 +1136,47 @@ margin: 20px 0 20px;
     }
 
     .popup-video {
-        padding: 0; /* Ta bort padding för att tillåta att videon når till kanterna */
-        box-sizing: border-box; /* Behåll detta för att undvika oförutsägbar beteende med bredder */
-        width: 100%; /* Tillägg så att .popup-video tar upp hela bredden */
-        height: 100%; /* Tillägg så att .popup-video tar upp hela höjden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        z-index: 1000;
     }
 
     .popup-inner {
-        width: 100%; /* Låter .popup-inner fylla 100% av .popup-video */
-        max-width: 100%; /* Används inte längre men kan behållas om du vill ha en begränsning */
-        height: auto; /* Justerar höjden för att behålla videoaspekten */
-        margin: auto; /* Centrerar i viewporten om det finns vertikal utrymme */
-        box-shadow: none; /* Optional: Ta bort skuggan om den inte ser bra ut på små skärmar */
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup-inner iframe {
+        width: 100%;
+        height: 100%;
+        border: none; /* Tar bort border från iframe */
+        /* Du kan behöva lägga till följande om din iframe innehåller en border i dess design */
+        box-shadow: none;
     }
 
     .popup-close {
-        top: 5px; /* Justera positionen närmare toppen av skärmen */
-        right: 5px; /* Justera positionen närmare kanten av skärmen */
-        font-size: 20px; /* Justera storleken om den är för stor på små skärmar */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2em;
+        color: white;
+        cursor: pointer;
+        z-index: 1001; /* Säkerställer att stängningsknappen är ovanför iframe */
     }
-
-    .popup-inner video {
-        width: 100%; /* Säkerställ att videon fyller hela bredden av .popup-inner */
-        height: auto; /* Låt höjden vara auto för att behålla videoaspekten */
-    }
-
 }
+
 
 
 @media (max-width: 1060px) { /* Adjust the max-width value based on your breakpoint needs */
