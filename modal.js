@@ -1,15 +1,17 @@
 // Function to open the modal
 function openModal() {
-  // Check if the modal has already been shown in this session
   if (!sessionStorage.getItem('modalShown')) {
     document.getElementById("myModal").style.display = "flex";
     sessionStorage.setItem('modalShown', 'true'); // Set a flag in sessionStorage
+  } else {
+    startDotAnimations(); // Start dot animations if the modal is not shown this session
   }
 }
 
 // Function to close the modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
+  startDotAnimations(); // Start animations after modal is closed
 }
 
 // Function to initialize the slideshow
@@ -28,15 +30,14 @@ function initSlides() {
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) { slideIndex = 1; }    
+    if (n > slides.length) { slideIndex = 1; }
     if (n < 1) { slideIndex = slides.length; }
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
     }
-    slides[slideIndex-1].style.display = "block";  
+    slides[slideIndex-1].style.display = "block";
   }
 
-  // Adding event listeners to next/previous buttons
   document.querySelector('.next').addEventListener('click', function() {
     plusSlides(1);
   });
@@ -46,34 +47,41 @@ function initSlides() {
   });
 }
 
+// Start observing dot animations with delay
+function startDotAnimations() {
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              const dots = entry.target.querySelectorAll('.dot');
+              dots.forEach((dot, index) => {
+                  setTimeout(() => {
+                      dot.style.transform = 'scale(1)';
+                      if (dot.classList.contains('transparent')) {
+                          dot.style.opacity = '0.55';
+                      } else {
+                          dot.style.opacity = '1';
+                      }
+                  }, 300 + index * 150); // Increased delay for each dot
+              });
+              observer.unobserve(entry.target);
+          }
+      });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.percent1, .profileText .dots').forEach(element => {
+      observer.observe(element);
+  });
+}
+
 // Listening for the full load of the page
 window.onload = function() {
   if (document.readyState === 'complete') {
-    // Initialize the slides
-    initSlides();
-
-    let observer = new MutationObserver((mutations) => {
-      let isContentAdded = mutations.some(mutation => mutation.addedNodes.length > 0);
-
-      if (isContentAdded) {
-        console.log('New content added!');
-      }
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true
-    });
-
-    // Attempt to open the modal shortly after load
-    setTimeout(openModal, 500);
+    initSlides(); // Initialize the slides
+    setTimeout(openModal, 500); // Delay opening modal to ensure page is ready
   }
 };
 
-// Close the modal when clicking on the close button
 document.querySelector('.close').addEventListener('click', closeModal);
-
-// Close the modal when clicking outside the modal content
 window.onclick = function(event) {
   if (event.target == document.getElementById("myModal")) {
     closeModal();
