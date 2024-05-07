@@ -8,10 +8,10 @@ function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
-// Event listener for DOMContentLoaded event
-document.addEventListener('DOMContentLoaded', function() {
-  openModal(); // Automatically open the modal when the page loads
-});
+// Event listener for the window's load event
+window.onload = function() {
+  openModal(); // Automatically open the modal when the entire page content has loaded
+};
 
 // Event listener for closing the modal when clicking on the close button
 document.querySelector('.close').addEventListener('click', closeModal);
