@@ -1,6 +1,10 @@
 // Function to open the modal
 function openModal() {
-  document.getElementById("myModal").style.display = "flex";
+  // Check if the modal has already been shown in this session
+  if (!sessionStorage.getItem('modalShown')) {
+    document.getElementById("myModal").style.display = "flex";
+    sessionStorage.setItem('modalShown', 'true'); // Set a flag in sessionStorage
+  }
 }
 
 // Function to close the modal
@@ -24,10 +28,10 @@ function initSlides() {
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) { slideIndex = 1; }    
+    if (n < 1) { slideIndex = slides.length; }
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+      slides[i].style.display = "none";  
     }
     slides[slideIndex-1].style.display = "block";  
   }
@@ -44,20 +48,15 @@ function initSlides() {
 
 // Listening for the full load of the page
 window.onload = function() {
-  // Ensure all elements are fully loaded
   if (document.readyState === 'complete') {
     // Initialize the slides
     initSlides();
 
-    // Setup MutationObserver to check for dynamic content
     let observer = new MutationObserver((mutations) => {
       let isContentAdded = mutations.some(mutation => mutation.addedNodes.length > 0);
 
       if (isContentAdded) {
         console.log('New content added!');
-        // Reset the timer whenever new content is added
-        clearTimeout(window.modalTimer);
-        window.modalTimer = setTimeout(openModal, 500); // Delay to ensure stability
       }
     });
 
@@ -66,8 +65,8 @@ window.onload = function() {
       subtree: true
     });
 
-    // Open modal shortly after load if no mutations are observed quickly
-    window.modalTimer = setTimeout(openModal, 500);
+    // Attempt to open the modal shortly after load
+    setTimeout(openModal, 500);
   }
 };
 
