@@ -43,6 +43,10 @@ body {
     position: relative;
 }
 
+#loadingScreen{
+  z-index: 99999 !important;
+}
+
 .lang-toggle {
     position: absolute;
     top: 16px;
