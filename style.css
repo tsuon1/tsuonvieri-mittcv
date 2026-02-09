@@ -45,7 +45,15 @@ body {
 
 #loadingScreen{
   z-index: 99999 !important;
+  opacity: 1;
+  transition: opacity .25s ease;
 }
+
+#loadingScreen.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 .container{
   opacity: 0;
