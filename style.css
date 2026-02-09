@@ -47,6 +47,17 @@ body {
   z-index: 99999 !important;
 }
 
+.container{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s ease;
+}
+
+body.is-ready .container{
+  opacity: 1;
+  visibility: visible;
+}
+
 .lang-toggle {
     position: absolute;
     top: 16px;
