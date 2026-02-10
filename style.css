@@ -54,18 +54,6 @@ body {
   pointer-events: none;
 }
 
-
-.container{
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .25s ease;
-}
-
-body.is-ready .container{
-  opacity: 1;
-  visibility: visible;
-}
-
 .lang-toggle {
     position: absolute;
     top: 16px;
@@ -187,6 +175,15 @@ body.is-ready .container{
     padding: 40px;
 }
 
+/* Dölj CV:t tills vi säger att sidan är klar */
+.container {
+    opacity: 0;
+    transition: opacity .25s ease;
+}
+
+body.is-ready .container {
+    opacity: 1;
+}
 
 .profileText {
     position: relative;
@@ -244,9 +241,6 @@ body.is-ready .container{
     background: rgba(0, 0, 0, 0.7);
     transform: translate(-50%, -50%) scale(1.02);
 }
-
-
-
 
 
 
@@ -315,6 +309,19 @@ body.is-ready .container{
     opacity: 0.55;
 }
 
+/* Smooth scale */
+.skills_container .lottie{
+  transform: scale(1);
+  transition: transform .18s ease;
+  transform-origin: center;
+  will-change: transform;
+}
+
+/* Scale only the hovered item */
+.skills_container .lottie:hover{
+  transform: scale(1.12);
+}
+
 .profileText .dots .dot {
     /* Size and other styles for the dot */
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -332,6 +339,7 @@ body.is-ready .container{
 .profileText .dots .dot.yellow {
     background-color: #F5EF79;
 }
+
 
 /* Define other color classes similarly */
 
